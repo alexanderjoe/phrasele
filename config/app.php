@@ -232,4 +232,6 @@ return [
 
     ],
 
+    'password' => env('APP_PHRASE_PASSWORD', 'phrasele')
+
 ];

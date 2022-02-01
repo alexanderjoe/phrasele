@@ -15,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [GameController::class, 'index']);
+
+Route::get('/admin/addphrase', [GameController::class, 'create']);
+Route::post('/admin/addphrase', [GameController::class, 'store'])->name('create.phrase');
