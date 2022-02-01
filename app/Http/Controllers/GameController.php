@@ -28,7 +28,7 @@ class GameController extends Controller
             return back();
         }
 
-        $solution = collect(str_split("Hello World"))->map(function ($word) {
+        $solution = collect(str_split($request->phrase))->map(function ($word) {
             if($word == " ") {
                 return "";
             } else {
